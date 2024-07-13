@@ -30,7 +30,7 @@ Should works for any Linux distribution which has CMake and Qt.
 
 ```sh
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DQT4_BUILD=ON ..
+cmake .. -DCMAKE_BUILD_TYPE=Release -DQT4_BUILD=ON
 make
 ```
 
@@ -38,8 +38,8 @@ make
 
 ```sh
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DQT5_BUILD=ON ..
-make
+cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DQT5_BUILD=ON
+ninja -j1
 ```
 
 If building Qt5 version on Ubuntu 18.04+, install required Qt5LinguistTools from `qttools5-dev` package.
@@ -48,8 +48,8 @@ If building Qt5 version on Ubuntu 18.04+, install required Qt5LinguistTools from
 
 ```sh
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DQT6_BUILD=ON ..
-make
+cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DQT6_BUILD=ON
+ninja -j1
 ```
 
 If cmake report some Qt6 requirements missing on Ubuntu, install them.
@@ -64,7 +64,7 @@ Only Qt5 version
 
 ```sh
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake .. -DCMAKE_BUILD_TYPE=Release
 make
 make dmg # to build dmg package
 ```
