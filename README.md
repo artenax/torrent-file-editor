@@ -11,6 +11,8 @@ Homepage: https://torrent-file-editor.github.io
 Sources: https://github.com/torrent-file-editor/torrent-file-editor  
 Crowdin translations: https://crowdin.com/project/torrent-file-editor
 
+![teditor](https://github.com/user-attachments/assets/21ebf55d-855e-4a10-8300-4c2ac0ec5cc7)
+
 # Build Instructions
 
 Need to have
